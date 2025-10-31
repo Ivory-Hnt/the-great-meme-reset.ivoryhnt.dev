@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>::: THE GREAT MEME RESET - THE PROPHECY IS CLEAR :::</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+      Oh hai. Welcome to my hax0r code. 
+      This site is 100% l33t. We are preparing for 2026.
+    -->
+    <style>
+        /* --- GLOBAL STYLES --- */
+        body {
+            /* That classic "dark mode" that was just a repeating texture */
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMjIyIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzMzMiPjwvcmVjdD4KPC9zdmc+');
+            background-color: #1a1a1a;
+            font-family: 'Arial', 'Verdana', sans-serif;
+            color: #dddddd;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Main Page Container --- */
+        #container {
+            width: 960px; /* The classic fixed-width layout */
+            max-width: 100%; /* ...but with a small modern tweak so it doesn't break mobile */
+            margin: 10px auto;
+            background-color: #2a2a2a;
+            border: 3px solid #444;
+            border-radius: 10px;
+            /* The neon glow, a 2012 staple */
+            box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff inset;
+        }
+
+        /* --- HEADER --- */
+        header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px dashed #555;
+            background: linear-gradient(to bottom, #4a4a4a, #333333);
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 72px;
+            color: #ff00ff;
+            /* The cheesy 3D text shadow */
+            text-shadow: 3px 3px 0 #00ffff, -3px -3px 0 #ffff00;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* --- The glorious <marquee> tag --- */
+        .scrolling-news {
+            background-color: #111;
+            color: #00ff00; /* Bright neon green */
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+
+        /* --- Navigation Bar (Glossy Buttons!) --- */
+        nav {
+            background: linear-gradient(to bottom, #555, #222);
+            border-bottom: 1px solid #777;
+            border-top: 1px solid #777;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 12px 25px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+            /* The "Web 2.0" glossy button gradient */
+            background: linear-gradient(to bottom, #66aaff, #3377cc);
+            border: 1px solid #2a65ad;
+            /* Inset shadow for 3D effect */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.2) inset;
+            text-shadow: 1px 1px 1px #2a65ad;
+            margin: 0 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        nav a:hover {
+            background: linear-gradient(to bottom, #88ccff, #4499ee);
+            color: #fff;
+            box-shadow: 0 0 10px #88ccff;
+            transform: scale(1.05);
+        }
+
+        /* --- Main Content Area --- */
+        #main-content {
+            padding: 25px;
+        }
+
+        /* Section styles */
+        .content-section {
+            background-color: #333;
+            border: 1px solid #444;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+
+        .content-section h2 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 28px;
+            color: #ffff00; /* Bright yellow */
+            border-bottom: 2px dashed #ffff00;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .content-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .content-section p a {
+            color: #66ccff;
+            font-weight: bold;
+        }
+
+        /* --- Image Styles --- */
+        .inline-img {
+            float: right; /* Floating images, a 2012 classic */
+            margin: 0 0 10px 15px;
+            border: 3px solid #555;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #000;
+        }
+        
+        .inline-img.left {
+            float: left;
+            margin: 0 15px 10px 0;
+        }
+        
+        .center-img {
+            display: block;
+            margin: 15px auto;
+            border: 3px solid #555;
+            border-radius: 5px;
+        }
+
+        /* --- Meme Gallery --- */
+        .meme-gallery {
+            display: flex; /* Ok, one modern thing for layout */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            background-color: #202020;
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
+        
+        .meme-item {
+            background: #333;
+            border: 2px solid #555;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            width: 250px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .meme-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #666;
+        }
+        
+        .meme-item p {
+            font-family: 'Impact', sans-serif;
+            font-size: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 2px #000;
+            margin: 10px 0 0 0;
+            text-transform: uppercase;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            padding: 20px;
+            border-top: 2px dashed #555;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        
+        <!-- Header -->
+        <header>
+            <!-- A classic spinning GIF -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Nyan_cat_animation.gif" alt="Nyan Cat" height="80" style="float: left; margin-top: 10px;">
+            <h1>THE GREAT MEME RESET</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Nyan_cat_animation.gif" alt="Nyan Cat" height="80" style="float: right; margin-top: 10px; transform: scaleX(-1);">
+        </header>
+
+        <!-- Scrolling News Ticker -->
+        <div class="scrolling-news">
+            <marquee behavior="scroll" direction="left">
+                !!! WARNING: THE PROPHECY IS CLEAR !!! JAN 1ST 2026 IS THE DAY OF RECKONING !!! THE GREAT MEME RESET IS COMING !!! NO MORE BRAINROT !!! PREPARE YOURSELVES !!!
+            </marquee>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#prophecy">WHAT IS THE PROPHECY?</a>
+            <a href="#signs">THE SIGNS</a>
+            <a href="#golden-age">THE GOLDEN AGE</a>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main-content">
+
+            <!-- Home Section -->
+            <section id="home" class="content-section">
+                <h2>WELCOME, FUTURE-SURVIVOR...</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png" alt="Trollface" class="inline-img left" width="150">
+                <p>U have found this page. Good. That means u are one of the few who has sensed that something is... *wrong*. Does the internet feel... broken? Does it feel like your brain is rotting? You sense the darkness... the 'Brainrot-Era.' You are one of the few who remembers the 'Before-Time.'</p>
+                <p>It's not your imagination. You're not crazy.</p>
+                <p>This website is dedicated to preparing humanity for <strong>The Great Meme Reset</strong>, a prophesied event on **January 1st, 2026**. The prophecy is clear. It's not the end of the world... it's the end of *their* world. The world of brainrot. We are the survivors of the Before-Time, and this is our warning. Problem?</p>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Under_construction.gif" alt="Under Construction" class="center-img">
+                <p style="text-align: center; font-style: italic;">(This page is always under construction... until the day of the Reset!)</p>
+            </section>
+
+            <!-- What is the Prophecy? Section -->
+            <section id="prophecy" class="content-section">
+                <h2>WHAT IS THE 2026 PROPHECY?</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Philosoraptor.jpg/232px-Philosoraptor.jpg" alt="Philosoraptor" class="inline-img" width="180">
+                <p>What if I told you... a great cleansing is coming?</p>
+                <p>The Great Meme Reset (GMR) is a prophesied event, a cultural flash, that will occur on or around <strong>January 1st, 2026</strong>. While the "normies" are busy with their mindless 'tung tung sahur' and '67' videos, a switch will be flipped. A great NO U will be declared upon the Brainrot.</p>
+                
+                <p><strong>The Brainrot-Era (2020-2025):</strong> A time of cultural decay. Meaningless, repetitive sounds. 'Tung Tung Sahur.' '67.' Skibidi. Content designed by algorithms to numb the mind. This is the darkness the Reset will purge.</p>
+                
+                <p><strong>The Golden Age (Pre-2016):</strong> A time of purity. Rage Comics (Trollface, Forever Alone, Me Gusta), Advice Animals (Bad Luck Brian, Scumbag Steve), and beautiful chaos (Nyan Cat, Keyboard Cat). Memes were simple, relatable, and made by people.</p>
+
+                <p><strong>The "Reset" (Jan 1, 2026):</strong> The GMR is a cultural *purge*. It will wipe the servers, break the algorithms, and eliminate the brainrot, forcing a return to the purity of the Golden Age. Nyan Cat will fly again! It is the promise of a new dawn. ALL YOUR BASE WILL BELONG TO US AGAIN.</p>
+            </section>
+            
+            <!-- The Signs Section -->
+            <section id="signs" class="content-section">
+                <h2>THE SIGNS ARE EVERYWHERE</h2>
+                <p>Still don't believe me? Open your eyes, sheeple! The signs of the Brainrot-Era are clear, and they prove why the Reset is necessary.</p>
+                
+                <h3>Sign A: The Rise of Meaningless Noise</h3>
+                <p>Why is 'Tung Tung Sahur' a 'meme'? It has no punchline. No story. No joke. It is a symptom of the disease, a digital virus the Reset must cure. It is not "lol", it is not "rofl", it is... nothing.</p>
+                
+                <h3>Sign B: The "67" Enigma</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Bad_Luck_Brian.jpg/220px-Bad_Luck_Brian.jpg" alt="Bad Luck Brian" class="inline-img" width="180">
+                <p>Look at this. Bad Luck Brian. He had a story. A soul. Now... what is "67"? Where did it come from? It's a digital virus, a placeholder for real culture. This is what 'They' (the algorithms) want you to consume. Empty. Vapid. Ready for the purge. (U MAD BRO?)</p>
+                
+                <h3>Sign C: The Prophecy of Nyan Cat</h3>
+                <p>Why is Nyan Cat (a Golden Age hero) still remembered? Why does its song still echo in the deep web? It is a beacon. A sign that the pure, chaotic energy can never truly be destroyed, only suppressed. It waits. It *knows* the Reset is coming. It will be our anthem once more.</p>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="golden-age" class="content-section">
+                <h2>THE GOLDEN AGE (WHAT WE FIGHT FOR)</h2>
+                <p>These are not memories. They are the *future*. This is what we will rebuild after the brainrot is cleansed on Jan 1, 2026. This is the world we will return to. PREPARE.</p>
+                
+                <div class="meme-gallery">
+                    <div class="meme-item">
+                        <img src="https://i.imgflip.com/1o1l.jpg" alt="Scumbag Steve">
+                        <p>SCUMBAG STEVE</p>
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://i.imgflip.com/1bip.jpg" alt="Good Guy Greg">
+                        <p>GOOD GUY GREG</p>
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://i.imgflip.com/1wz1.jpg" alt="Success Kid">
+                        <p>SUCCESS KID</p>
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://i.imgflip.com/267w.jpg" alt="Forever Alone">
+                        <p>FOREVER ALONE</p>
+                    </div>
+                    <div class="meme-item">
+                        <img src="https://i.imgflip.com/gtj.jpg" alt="Grumpy Cat">
+                        <p>GRUMPY CAT (HERO OF THE LATE-GOLDEN ERA)</p>
+                    </div>
+                    <div class="meme-item">
+                        <img src="httpsentry://i.imgflip.com/1k2.jpg" alt="Me Gusta">
+                        <p>ME GUSTA</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 - PREPARING FOR THE 2026 RESET</p>
+            <p>This page was made with Microsoft Frontpage (NOT REALLY) and pure l33t skillz.</p>
+            <p>All ur base r belong to us. Zero Wing 4ever.</p>
+            
+            <!-- A fake hit counter for that authentic 2012 feel -->
+            <div>
+                <p style="color: #aaa; margin-bottom: 5px;">U R VISTOR NUMBR:</p>
+                <img src="https://www.free-website-hit-counter.com/bin/download-counter/007.gif" alt="Hit Counter" style="border: 0;">
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
